@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML & CSS Cheat Sheet</title>
+		<link rel="stylesheet" href="./resources/css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<p id="nav-title">Cheat Sheet</p>
+				<ul>
+					<li><a href="#section-html" class="none-decoration">HTML</a></li>
+					<li><a href="#section-css" class="none-decoration">CSS</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- Banner -->
+			<section class="banner">
+				<div>
+					<h1>The HTML/CSS Cheat Sheet</h1>
+					<h2>Welcome to the best cheat sheet ever done by a beginner</h2>
+					<button type="button">
+						<a href="#section-html" class="none-decoration">Let me see!</a>
+					</button>
+				</div>
+			</section>
+			<!-- HTML section -->
+			<section id="section-html">
+				<div class="title-section">
+					<h3>HTML</h3>
+				</div>
+				<section id="semantic-structure">
+					<h4>Semantic Structure</h4>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Tag</th>
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"><span class="code">&lt;article&gt;</span></th>
+								<td>Article</td>
+								<td>Defines independent, self-contained content</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;aside&gt;</span></th>
+								<td>Aside</td>
+								<td>Defines content aside from the page content</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;details&gt;</span></th>
+								<td>Details</td>
+								<td>
+									Defines additional details that the user can view or hide
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">
+									<span class="code">&lt;figcaption&gt;</span>
+								</th>
+								<td>Figure Caption</td>
+								<td>Defines a caption for a &lt;figure&gt; element</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;figure&gt;</span></th>
+								<td>Figure</td>
+								<td>
+									Specifies self-contained content, like illustrations,
+									diagrams, photos, code listings, etc
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;footer&gt;</span></th>
+								<td>Footer</td>
+								<td>Defines a footer for a document or section</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;header&gt;</span></th>
+								<td>Header</td>
+								<td>Specifies a header for a document or section</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;main&gt;</span></th>
+								<td>Main</td>
+								<td>Specifies the main content of a document</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;mark&gt;</span></th>
+								<td>Text Mark</td>
+								<td>Defines marked/highlighted text</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;nav&gt;</span></th>
+								<td>Navigation Bar</td>
+								<td>Defines navigation links</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;section&gt;</span></th>
+								<td>Section</td>
+								<td>Defines a section in a document</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;summary&gt;</span></th>
+								<td>Summary</td>
+								<td>Defines a visible heading for a &lt;details&gt; element</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">&lt;time&gt;</span></th>
+								<td>Time</td>
+								<td>Defines a date/time</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</section>
+			<!-- CSS section -->
+			<section id="section-css">
+				<div class="title-section">
+					<h3>CSS</h3>
+				</div>
+				<!-- Flow and position section -->
+				<section id="flow-and-position">
+					<h4>Position</h4>
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Position</th>
+								<th scope="col">Name</th>
+								<th scope="col">Description</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row"><span class="code">relative</span></th>
+								<td>Relative</td>
+								<td>
+									This value allows you to position an element relative to its
+									default static position on the web page
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">absolute</span></th>
+								<td>Absolute</td>
+								<td>
+									When an element’s position is set to absolute, all other
+									elements on the page will ignore the element and act like it
+									is not present on the page. The element will be positioned
+									relative to its closest positioned parent element, while
+									offset properties can be used to determine the final position
+									from there
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">fixed</span></th>
+								<td>Fixed</td>
+								<td>
+									We can fix an element to a specific position on the page
+									(regardless of user scrolling) by setting its position to
+									fixed, and accompanying it with the familiar offset properties
+									top, bottom, left, and right
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><span class="code">sticky</span></th>
+								<td>Sticky</td>
+								<td>
+									The sticky value is another position value that keeps an
+									element in the document flow as the user scrolls, but sticks
+									to a specified position as the page is scrolled further
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<!-- Examples of flow and position -->
+					<section id="examples-position">
+						<h5>Examples</h5>
+						<div class="images-positions">
+							<figure>
+								<img src="https://static-assets.codecademy.com/Courses/Learn-CSS/Display-Position/Relative.png" alt="Example of the relative positioning"/>
+								<figcaption>Relative</figcaption>
+							</figure>
+							<figure>
+								<img src="https://static-assets.codecademy.com/Courses/Learn-CSS/Display-Position/position-absolute.png" alt="Example of the absolute positioning"/>
+								<figcaption>Absolute</figcaption>
+							</figure>
+							<figure>
+								<img src="https://static-assets.codecademy.com/Courses/Learn-CSS/Display-Position/Fixed.gif" alt="Example of the fixed positioning"/>
+								<figcaption>Fixed</figcaption>
+							</figure>
+							<figure>
+								<img src="https://static-assets.codecademy.com/Courses/Learn-CSS/Display-Position/Sticky.gif" alt="Example of the sticky positioning"/>
+								<figcaption>Sticky</figcaption>
+							</figure>
+						</div>
+					</section>
+				</section>
+			</section>
+		</main>
+		<footer>
+			<p>created by Ricardo Arturo Guzman Duran</p>
+			<p>
+				<a href="https://github.com/ricard0g" target="_blank" class="none-decoration">@ricard0g</a> in
+				GitHub
+			</p>
+		</footer>
+	</body>
+</html>
